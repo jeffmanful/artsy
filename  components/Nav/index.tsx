@@ -8,7 +8,7 @@ const Nav = () => (
       <p className="title">Artsy</p>
     </Link>
     <StyledNavList>
-      {links.map(link => (<li>{link.text}</li>))}
+      {links.map(link => (<li key={link.text}>{link.text}</li>))}
     </StyledNavList>
   </Wrapper>
 )
